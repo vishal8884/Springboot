@@ -1,0 +1,16 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<h1>Welcome admin</h1>
+<br>
+<!-- <form th:action="@{/user/dashboard}" method="post">
+    <input type="submit" value="gotouser" />
+</form> done by path variable method below-->
+
+<a th:href="@{/user/dashboard}">view</a>
+
+<form th:action="@{/admin/logout}" method="post">
+    <input type="submit" value="Logout" />
+</form>
+
+</html>
